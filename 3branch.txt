@@ -1,0 +1,5 @@
+making directories
+going into directories
+adding a file in the directory
+linking the remote file to the origin
+committing the file after making a change per chance
