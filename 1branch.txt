@@ -1,0 +1,43 @@
+testing different branches
+
+herak@LAPTOP-9AU1O4SB MINGW64 ~/newdirectory (master)
+$ git branch first_branch
+
+herak@LAPTOP-9AU1O4SB MINGW64 ~/newdirectory (master)
+$ git checkout first_branch
+Switched to branch 'first_branch'
+M       marksofstudent.cpp
+
+herak@LAPTOP-9AU1O4SB MINGW64 ~/newdirectory (first_branch)
+$ git add 3branch.txt
+
+herak@LAPTOP-9AU1O4SB MINGW64 ~/newdirectory (first_branch)
+$ git commit -m "made changes and clarified some references"
+[first_branch cfe2bb0] made changes and clarified some references
+ 1 file changed, 5 insertions(+)
+ create mode 100644 3branch.txt
+
+herak@LAPTOP-9AU1O4SB MINGW64 ~/newdirectory (first_branch)
+$ ls
+1branch.txt  2branch.txt  3branch.txt  marksofstudent.cpp
+
+herak@LAPTOP-9AU1O4SB MINGW64 ~/newdirectory (first_branch)
+$ git checkout master
+Switched to branch 'master'
+M       marksofstudent.cpp
+
+herak@LAPTOP-9AU1O4SB MINGW64 ~/newdirectory (master)
+$ ls
+1branch.txt  2branch.txt  marksofstudent.cpp
+
+herak@LAPTOP-9AU1O4SB MINGW64 ~/newdirectory (master)
+$ git merge first_branch
+Updating 069fdb8..cfe2bb0
+Fast-forward
+ 3branch.txt | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 3branch.txt
+
+herak@LAPTOP-9AU1O4SB MINGW64 ~/newdirectory (master)
+$ ls
+1branch.txt  2branch.txt  3branch.txt  marksofstudent.cpp
